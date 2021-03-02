@@ -1,0 +1,79 @@
+@startuml
+
+!include styles.plantuml
+
+title Example Object Diagram
+
+object Aircraft {
+  + manufacturer: String
+  + type: String
+  + tailNumber: String
+  + capacity: int
+}
+
+object Flight {
+  + date: Date
+  + flightNo: String
+  + airline: Airline
+  + gateOpen: DateTime
+  + gateClosed: DateTime
+  + departure: DateTime
+  + arrival: DateTime
+}
+
+Aircraft "1" -- "0..*" Flight
+
+object Airline {
+  + name: String
+}
+
+
+object POI {
+ + name: String
+ + latitude: double
+ + longitude: double
+ + {abstract} icon: String
+}
+
+object Shop {
+  + icon: String
+}
+
+
+object Bar {
+  + icon: String
+}
+
+
+object Parking {
+  + icon: String
+  + capacity: int
+  + availability: int
+}
+
+
+POI <|-- Shop 
+POI <|-- Bar 
+POI <|-- Parking
+
+
+User -- POI: managed by <
+
+
+object User {
+  + username: String
+  + name: String
+  + email: String
+  + isAdmin(): boolean
+}
+
+Airline "1" o-- "0..*" Flight
+
+legend right
+  Short
+  legend
+endlegend
+
+caption Object Diagram
+
+@enduml

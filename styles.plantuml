@@ -1,0 +1,244 @@
+@startuml
+
+!define COLOR_DEFAULT_BACKGROUND #fff
+!define COLOR_DEFAULT_TEXT Black
+!define COLOR_DEFAULT_PALE_YELLOW #fbf9eb
+!define COLOR_DEFAULT_BORDER #ccc
+!define COLOR_CYAN_BLUE #009ddc
+!define COLOR_BLACK #333
+!define COLOR_WHITE #fff
+
+!define FONT_FIRA_MONO Fira Mono
+!define FONT_FIRA_CODE Fira Code
+!define FONT_FIRA_SANS Fira Sans
+
+'skinparam backgroundcolor transparent
+skinparam backgroundcolor white
+
+skinparam defaultFontColor COLOR_DEFAULT_TEXT
+skinparam defaultFontName FONT_FIRA_MONO
+skinparam defaultFontSize 14
+skinParam defaultFontStyle plain
+
+
+ hide footbox 
+
+skinparam dpi 90
+
+'Controls how lines are drawn in PlantUML
+'values: otho, polyline, splines (default)
+skinparam linetype ortho
+'skinparam linetype ortho
+
+'Distance between elements (vertically, default: 30)
+'skinparam nodesep 30
+
+skinparam roundcorner 20
+
+'Controls the padding surrounding text
+skinparam padding 4
+
+'Distance between elements (horizontally, default: 30)
+'skinparam ranksep 30
+
+'Line below ensures all classes have the same width in UML class diagram
+'skinparam SameClassWidth true
+
+'Uncomment line below to disable shadows
+skinparam Shadowing false
+
+
+skinparam activity {
+  BackgroundColor COLOR_WHITE
+  BorderColor COLOR_DEFAULT_BORDER
+  DiamondBackgroundColor COLOR_DEFAULT_PALE_YELLOW
+  DiamondBorderColor COLOR_DEFAULT_BORDER
+}
+
+skinparam actor {
+  BackgroundColor COLOR_WHITE
+  BorderColor COLOR_CYAN_BLUE
+}
+
+skinparam agent {
+  BackgroundColor COLOR_DEFAULT_BACKGROUND
+  BorderColor COLOR_DEFAULT_BORDER
+}
+
+skinparam arrow {
+  Color COLOR_CYAN_BLUE
+  FontColor COLOR_DEFAULT_TEXT
+}
+
+skinparam artifact {
+  BackgroundColor COLOR_DEFAULT_BACKGROUND
+  BorderColor COLOR_DEFAULT_BORDER
+}
+
+skinparam biddable {
+  BackgroundColor COLOR_DEFAULT_BACKGROUND
+  BorderColor COLOR_DEFAULT_BORDER
+}
+
+skinparam boundary {
+  BackgroundColor COLOR_DEFAULT_BACKGROUND
+  BorderColor COLOR_DEFAULT_BORDER
+}
+
+skinparam card {
+  BackgroundColor COLOR_DEFAULT_BACKGROUND
+  BorderColor COLOR_DEFAULT_BORDER
+}
+
+skinparam class {
+  BackgroundColor COLOR_DEFAULT_BACKGROUND
+  BorderColor COLOR_DEFAULT_BORDER
+  FontStyle bold
+  HeaderBackgroundColor COLOR_DEFAULT_BACKGROUND
+}
+
+skinparam cloud {
+  BackgroundColor COLOR_WHITE
+  BorderColor COLOR_DEFAULT_BORDER
+}
+
+skinparam collections {
+  BackgroundColor COLOR_WHITE
+  BorderColor COLOR_DEFAULT_BORDER
+}
+
+skinparam component {
+  BackgroundColor COLOR_DEFAULT_BACKGROUND
+  BorderColor COLOR_DEFAULT_BORDER
+  Style uml2  
+}
+
+skinparam control {
+  BackgroundColor COLOR_DEFAULT_BACKGROUND
+  BorderColor COLOR_DEFAULT_BORDER
+}
+
+skinparam database {
+  BackgroundColor COLOR_DEFAULT_BACKGROUND
+  BorderColor COLOR_DEFAULT_BORDER
+}
+
+skinparam designed {
+  BackgroundColor COLOR_DEFAULT_BACKGROUND
+  BorderColor COLOR_DEFAULT_BORDER
+}
+
+skinparam domain {
+  BackgroundColor COLOR_DEFAULT_BACKGROUND
+  BorderColor COLOR_DEFAULT_BORDER
+}
+
+skinparam entity {
+  BackgroundColor COLOR_DEFAULT_BACKGROUND
+  BorderColor COLOR_DEFAULT_BORDER
+}
+
+skinparam file {
+  BackgroundColor COLOR_DEFAULT_BACKGROUND
+  BorderColor COLOR_DEFAULT_BORDER
+}
+
+skinparam folder {
+  BackgroundColor COLOR_WHITE
+  BorderColor COLOR_DEFAULT_BORDER
+}
+
+skinparam frame {
+  BackgroundColor COLOR_WHITE
+  BorderColor COLOR_DEFAULT_BORDER
+}
+
+skinparam interface {
+  BackgroundColor COLOR_DEFAULT_BACKGROUND
+  BorderColor COLOR_DEFAULT_BORDER
+}
+
+skinparam object {
+  BackgroundColor COLOR_DEFAULT_BACKGROUND
+  BorderColor COLOR_DEFAULT_BORDER
+  FontStyle bold
+}
+
+skinparam node {
+  BackgroundColor COLOR_WHITE
+  BorderColor COLOR_DEFAULT_BORDER
+}
+
+skinparam note {
+  BackgroundColor COLOR_DEFAULT_PALE_YELLOW
+  BorderColor COLOR_DEFAULT_BORDER
+  FontName FONT_FIRA_SANS
+}
+
+skinparam package {
+  BackgroundColor COLOR_WHITE
+  BorderColor COLOR_DEFAULT_BORDER
+}
+
+skinparam participant {
+  BackgroundColor COLOR_WHITE
+  BorderColor COLOR_DEFAULT_BORDER
+}
+
+skinparam queue {
+  BackgroundColor COLOR_DEFAULT_BACKGROUND
+  BorderColor COLOR_DEFAULT_BORDER
+}
+
+skinparam rectangle {
+  BackgroundColor COLOR_WHITE
+  BorderColor COLOR_DEFAULT_BORDER
+}
+
+skinparam sequence {
+
+  DividerBackgroundColor COLOR_WHITE
+  DividerBorderColor COLOR_DEFAULT_BORDER
+  DividerFontStyle bold
+
+  GroupBackgroundColor COLOR_DEFAULT_PALE_YELLOW
+  GroupBodyBackgroundColor COLOR_WHITE
+'   GroupFontStyle bold
+'   GroupHeaderFontStyle bold
+  LifeLineBackgroundColor COLOR_WHITE
+  LifeLineBorderColor COLOR_DEFAULT_BORDER
+
+  ReferenceBackgroundColor COLOR_WHITE
+  ReferenceHeaderBackgroundColor COLOR_DEFAULT_PALE_YELLOW
+}
+
+skinparam stack {
+  BackgroundColor COLOR_DEFAULT_BACKGROUND
+  BorderColor COLOR_DEFAULT_BORDER
+}
+
+skinparam state {
+  BackgroundColor COLOR_DEFAULT_BACKGROUND
+  BorderColor COLOR_DEFAULT_BORDER
+  StartColor COLOR_BLACK
+  EndColor COLOR_BLACK
+}
+
+skinparam storage {
+  BackgroundColor COLOR_DEFAULT_BACKGROUND
+  BorderColor COLOR_DEFAULT_BORDER
+}
+
+skinparam title {
+  FontName FONT_FIRA_SANS
+  FontSize 16
+}
+
+skinparam usecase {
+  BackgroundColor COLOR_WHITE
+  BorderColor COLOR_DEFAULT_BORDER
+}
+
+
+
+@enduml
