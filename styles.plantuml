@@ -237,6 +237,7 @@ skinparam title {
 skinparam usecase {
   BackgroundColor COLOR_WHITE
   BorderColor COLOR_DEFAULT_BORDER
+  LineType spline
 }
 
 
